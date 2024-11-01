@@ -1,0 +1,99 @@
+/*
+Variables
+*/
+$orange: #EE964B;
+$orange-dark: #eb842d;
+$gray: #e4e4e4;
+$dark: #4a4a4a;
+
+
+#copper-payment-gateway.copper-payment-gateway {
+  padding: 0 50px 30px;
+  background: $gray;
+  color: #000000;
+  box-sizing: border-box;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .copper-payment-gateway {
+    &__current-provider {
+      margin: 0;
+      padding-top: 50px;
+
+      &-title {
+        font-weight: normal;
+      }
+
+      &-account {
+        font-weight: bold;
+      }
+    }
+
+    &__gas-notice {
+      margin-top: 20px;
+      margin-bottom: 0;
+      text-transform: none;
+    }
+
+    &__pay-button {
+      &, &:visited {
+        margin-top: 15px;
+        margin-bottom: 0;
+        width: auto;
+        height: auto;
+        padding: 20px 30px;
+        color: #ffffff;
+        background: $orange;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: .3s;
+      }
+
+      &:hover {
+        background-color: $orange-dark;
+      }
+    }
+
+    &__logs {
+      display: block;
+      margin-top: 12px;
+      margin-bottom: 0;
+      padding: 3px 9px;
+      border: 2px solid $orange-dark;
+      //color: $orange-dark;
+      background-color: #ffffff;
+
+      &:empty {
+        display: none;
+      }
+    }
+  }
+
+  .copper-payment-gateway-connected-addresses {
+    padding-top: 50px;
+
+    &__title {
+      margin: 0;
+    }
+
+    &__list {
+      margin: 30px 0 0 20px;
+    }
+
+    &__delete-button {
+      display: inline-block;
+      margin-left: 40px;
+      width: auto;
+      height: auto;
+      padding: 15px 20px;
+      background-color: $dark;
+      transition: .3s;
+
+      &:hover {
+        background-color: #000000;
+      }
+    }
+  }
+}
